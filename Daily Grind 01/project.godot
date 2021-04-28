@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Background",
+"language": "GDScript",
+"path": "res://Assets/Sauce/Background.gd"
+}, {
+"base": "Resource",
+"class": "Character",
+"language": "GDScript",
+"path": "res://Assets/Sauce/Character.gd"
+}, {
+"base": "Node",
+"class": "ScenePlayer",
+"language": "GDScript",
+"path": "res://ScenePlayer.gd"
+} ]
+_global_script_class_icons={
+"Background": "",
+"Character": "",
+"ScenePlayer": ""
+}
+
+[application]
+
+config/name="Daily Grind 01"
+run/main_scene="res://ScenePlayer.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+ResourceDB="*res://Autoloads/ResourceDB.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

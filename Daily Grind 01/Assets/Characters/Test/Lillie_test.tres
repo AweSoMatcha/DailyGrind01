@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Sauce/Character.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/Lillie_test.png-966d6efb5f48e9f28583231a22fe819c.stex"
+
+[resource]
+script = ExtResource( 1 )
+id = "lillietest"
+display_name = "Lillie"
+bio = "Just a gorl		"
+age = 25
+default_image = "neutral"
+images = {
+"neutral": SubResource( 1 )
+}

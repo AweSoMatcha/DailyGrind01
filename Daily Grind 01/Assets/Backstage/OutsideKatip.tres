@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Sauce/Background.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Backstage/Images/OutsideKatip.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+id = "outsidekatip"
+id_b = "outside"
+display_name = "OutsideKatip"
+texture = ExtResource( 2 )

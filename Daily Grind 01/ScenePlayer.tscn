@@ -1,0 +1,172 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Screens/Charadisp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Screens/Textbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ScenePlayer.gd" type="Script" id=3]
+[ext_resource path="res://Background.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Backstage/Images/Clipboard.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Backstage/Images/InCafe.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Screens/VN_Btns.tscn" type="PackedScene" id=7]
+[ext_resource path="res://icon.png" type="Texture" id=8]
+
+[node name="ScenePlayer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+self_modulate = Color( 0.0980392, 0.00392157, 0.141176, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Clipboard" type="TextureRect" parent="Background"]
+margin_left = 51.0739
+margin_top = 47.0
+margin_right = 1687.07
+margin_bottom = 993.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bgpic" type="TextureRect" parent="Background"]
+margin_left = 124.79
+margin_top = 106.0
+margin_right = 1438.79
+margin_bottom = 870.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1787.58
+margin_top = 106.0
+margin_right = 3390.58
+margin_bottom = 1007.0
+color = Color( 0.819608, 0.560784, 0.156863, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 1787.58
+margin_top = 324.0
+margin_right = 3390.58
+margin_bottom = 1007.0
+color = Color( 0.333333, 0.611765, 0.615686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 1787.58
+margin_top = 638.0
+margin_right = 3390.58
+margin_bottom = 1021.0
+color = Color( 0.341176, 0.439216, 0.376471, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Charadisp" parent="." instance=ExtResource( 1 )]
+visible = false
+
+[node name="Textbox" parent="." instance=ExtResource( 2 )]
+margin_left = 28.085
+margin_top = 789.01
+margin_right = 1117.08
+margin_bottom = 1062.01
+
+[node name="LifeBar" type="ProgressBar" parent="."]
+margin_left = 1194.51
+margin_top = 22.9909
+margin_right = 1888.51
+margin_bottom = 66.9909
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Table_Set" type="HBoxContainer" parent="."]
+margin_left = 1195.0
+margin_top = 829.0
+margin_right = 1826.0
+margin_bottom = 1053.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Table1" type="TextureButton" parent="Table_Set"]
+margin_right = 240.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 240, 0 )
+rect_pivot_offset = Vector2( 226.131, 98.5269 )
+texture_normal = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Table2" type="TextureButton" parent="Table_Set"]
+margin_left = 244.0
+margin_right = 484.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 240, 0 )
+rect_pivot_offset = Vector2( 226.131, 98.5269 )
+texture_normal = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Table3" type="TextureButton" parent="Table_Set"]
+margin_left = 488.0
+margin_right = 728.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 240, 0 )
+rect_pivot_offset = Vector2( 226.131, 98.5269 )
+texture_normal = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VN_Set" type="HBoxContainer" parent="."]
+margin_right = 763.0
+margin_bottom = 43.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Hide" parent="VN_Set" instance=ExtResource( 7 )]
+
+[node name="Btn_Hist" parent="VN_Set" instance=ExtResource( 7 )]
+margin_left = 164.0
+margin_right = 324.0
+
+[node name="Btn_Load" parent="VN_Set" instance=ExtResource( 7 )]
+margin_left = 328.0
+margin_right = 488.0
+
+[node name="Btn_Save" parent="VN_Set" instance=ExtResource( 7 )]
+margin_left = 492.0
+margin_right = 652.0
+
+[node name="Btn_Skip" parent="VN_Set" instance=ExtResource( 7 )]
+margin_left = 656.0
+margin_right = 816.0
+
+[node name="Btn_Auto" parent="VN_Set" instance=ExtResource( 7 )]
+margin_left = 820.0
+margin_right = 980.0

@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/UI/Lifebar.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/Btn_Table3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Lifebar_life.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Btn_Table2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/UI_backside.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/Btn_Table1.png" type="Texture" id=6]
+
+[node name="CafeUI" type="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sidebar" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -540.0
+margin_right = 608.0
+margin_bottom = 555.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lifebar" type="TextureProgress" parent="Sidebar"]
+margin_left = 293.219
+margin_top = 27.5173
+margin_right = 521.219
+margin_bottom = 695.517
+value = 20.0
+texture_over = ExtResource( 1 )
+texture_progress = ExtResource( 3 )
+fill_mode = 3
+
+[node name="Btn_Tbl1" type="TextureButton" parent="Sidebar"]
+margin_left = 304.654
+margin_top = 708.714
+margin_right = 480.654
+margin_bottom = 821.714
+texture_normal = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Tbl2" type="TextureButton" parent="Sidebar"]
+margin_left = 304.654
+margin_top = 831.076
+margin_right = 480.654
+margin_bottom = 944.076
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Btn_Tbl3" type="TextureButton" parent="Sidebar"]
+margin_left = 304.654
+margin_top = 953.076
+margin_right = 480.654
+margin_bottom = 1066.08
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
